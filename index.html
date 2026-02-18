@@ -64,6 +64,18 @@ header h1 { font-size: 2em; margin:0; }
 .moon { top:10px; right:20px; }
 .lantern { top:10px; left:20px; }
 
+header button.home-btn {
+    position: absolute;
+    left:20px;
+    top:20px;
+    background:#d84315;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
 section {
     margin-bottom: 40px;
     background: rgba(255,255,255,0.95);
@@ -106,12 +118,13 @@ tfoot td { background: #d1c4e9; font-weight: bold; }
     <button class="section-btn" onclick="showSection('dishes')">الأطباق</button>
 </div>
 
-<!-- الصفحات الداخلية -->
-<main id="points" style="display:none">
+<!-- النقاط -->
+<main id="points">
 <header>
     <div class="moon">🌙</div>
     <div class="lantern">🏮</div>
     <h1>تقييم النقاط</h1>
+    <button class="home-btn" onclick="goHome()">🏠 الرئيسية</button>
 </header>
 <section>
     <div id="top3Points" class="top3"></div>
@@ -129,19 +142,44 @@ tfoot td { background: #d1c4e9; font-weight: bold; }
             </tr>
         </thead>
         <tbody>
-            <!-- قيم 0 لكل الأيام -->
-            <!-- يمكنك تعديل القيم هنا مباشرة -->
-            <tr><td>1 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>2 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>3 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>4 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>5 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>6 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>7 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>8 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>9 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>10 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <!-- استمر حتى 30 رمضان -->
+            <!-- 30 يوم بقيم 0 -->
+            <script>
+            for(let i=1;i<=30;i++){
+                document.write(`<tbody>
+<tr><td>1 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>2 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>3 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>4 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>5 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>6 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>7 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>8 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>9 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>10 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>11 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>12 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>13 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>14 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>15 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>16 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>17 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>18 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>19 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>20 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>21 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>22 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>23 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>24 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>25 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>26 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>27 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>28 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>29 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>30 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody>
+`);
+            }
+            </script>
         </tbody>
         <tfoot>
             <tr>
@@ -159,11 +197,13 @@ tfoot td { background: #d1c4e9; font-weight: bold; }
 </section>
 </main>
 
-<main id="dishes" style="display:none">
+<!-- الأطباق -->
+<main id="dishes">
 <header>
     <div class="moon">🌙</div>
     <div class="lantern">🏮</div>
     <h1>طبق اليوم</h1>
+    <button class="home-btn" onclick="goHome()">🏠 الرئيسية</button>
 </header>
 <section>
     <div id="top3Dish" class="top3"></div>
@@ -181,10 +221,11 @@ tfoot td { background: #d1c4e9; font-weight: bold; }
             </tr>
         </thead>
         <tbody>
-            <tr><td>1 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>2 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <tr><td>3 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            <!-- استمر حتى 30 رمضان -->
+            <script>
+            for(let i=1;i<=30;i++){
+                document.write(`<tr><td>${i} رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>`);
+            }
+            </script>
         </tbody>
     </table>
 </section>
@@ -195,8 +236,16 @@ const names = ['أفراح','فضيلة','خديجة','أمل','أمور','زي�
 
 function showSection(sectionId){
     document.getElementById('home').style.display='none';
+    document.getElementById('points').style.display='none';
+    document.getElementById('dishes').style.display='none';
     document.getElementById(sectionId).style.display='block';
     calculateTop3();
+}
+
+function goHome(){
+    document.getElementById('home').style.display='flex';
+    document.getElementById('points').style.display='none';
+    document.getElementById('dishes').style.display='none';
 }
 
 function calculateTop3(){
@@ -235,3 +284,4 @@ function calculateTop3(){
 
 </body>
 </html>
+
