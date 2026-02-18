@@ -142,9 +142,6 @@ tfoot td { background: #d1c4e9; font-weight: bold; }
             </tr>
         </thead>
         <tbody>
-            <!-- 30 يوم بقيم 0 -->
-            <script>
-           <tbody>
 <tr><td>1 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>2 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>3 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
@@ -175,10 +172,6 @@ tfoot td { background: #d1c4e9; font-weight: bold; }
 <tr><td>28 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>29 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>30 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-</tbody>
-`);
-            }
-            </script>
         </tbody>
         <tfoot>
             <tr>
@@ -220,8 +213,6 @@ tfoot td { background: #d1c4e9; font-weight: bold; }
             </tr>
         </thead>
         <tbody>
-            <script>
-              <tbody>
 <tr><td>1 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>2 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>3 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
@@ -252,8 +243,6 @@ tfoot td { background: #d1c4e9; font-weight: bold; }
 <tr><td>28 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>29 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>30 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-            }
-            </script>
         </tbody>
     </table>
 </section>
@@ -292,7 +281,6 @@ function calculateTop3(){
     document.getElementById('sumAmour').textContent=pointsSums['أمور'];
     document.getElementById('sumZeinab').textContent=pointsSums['زينب'];
     document.getElementById('sumZahra').textContent=pointsSums['زهراء'];
-    // أفضل ٣
     const top3Points=Object.entries(pointsSums).sort((a,b)=>b[1]-a[1]).slice(0,3);
     const divP=document.getElementById('top3Points');
     divP.innerHTML='';
