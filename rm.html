@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رمضان المرهون</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom, #fceabb, #f8b500);
+        margin: 0;
+        padding: 0;
+        color: #4b2e83;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        background: #6a1b9a;
+        color: #fff;
+        position: relative;
+    }
+
+    header h1 { font-size: 2em; margin: 0; }
+
+    .moon, .lantern { position: absolute; font-size: 2em; }
+    .moon { top: 10px; right: 20px; }
+    .lantern { top: 10px; left: 20px; }
+
+    main { padding: 20px; }
+
+    section {
+        margin-bottom: 40px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    h2 { text-align: center; color: #d84315; margin-bottom: 15px; }
+
+    .top3 { display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; }
+    .top3 div {
+        background: #ffd54f;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        width: 100px;
+        font-weight: bold;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+    th, td { border: 1px solid #6a1b9a; padding: 8px; text-align: center; }
+    th { background: #ba68c8; color: white; }
+    tfoot td { background: #d1c4e9; font-weight: bold; }
+
+    @media (max-width: 600px) {
+        .top3 { flex-direction: column; align-items: center; }
+        .top3 div { width: 80%; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="moon">🌙</div>
+    <div class="lantern">🏮</div>
+    <h1>رمضان المرهون</h1>
+</header>
+
+<main>
+
+<section>
+    <h2>تقييم النقاط</h2>
+    <div id="top3Points" class="top3"></div>
+
+    <table id="pointsTable">
+        <thead>
+            <tr>
+                <th>اليوم</th>
+                <th>أفراح</th>
+                <th>فضيلة</th>
+                <th>خديجة</th>
+                <th>أمل</th>
+                <th>أمور</th>
+                <th>زينب</th>
+                <th>زهراء</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 30 يوم مع قيم 0 -->
+            <tr><td>1 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>2 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>3 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>4 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>5 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>6 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>7 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>8 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>9 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>10 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>11 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>12 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>13 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>14 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>15 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>16 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>17 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>18 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>19 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>20 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>21 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>22 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>23 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>24 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>25 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>26 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>27 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>28 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>29 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>30 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>المجموع</td>
+                <td id="sumAfrah">0</td>
+                <td id="sumFadila">0</td>
+                <td id="sumKhadija">0</td>
+                <td id="sumAmal">0</td>
+                <td id="sumAmour">0</td>
+                <td id="sumZeinab">0</td>
+                <td id="sumZahra">0</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section>
+    <h2>طبق اليوم</h2>
+    <div id="top3Dish" class="top3"></div>
+
+    <table id="dishTable">
+        <thead>
+            <tr>
+                <th>اليوم</th>
+                <th>أفراح</th>
+                <th>فضيلة</th>
+                <th>خديجة</th>
+                <th>أمل</th>
+                <th>أمور</th>
+                <th>زينب</th>
+                <th>زهراء</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 30 يوم مع قيم 0 -->
+            <tr><td>1 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>2 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>3 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>4 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>5 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>6 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>7 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>8 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>9 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>10 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>11 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>12 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>13 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>14 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>15 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>16 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>17 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>18 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>19 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>20 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>21 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>22 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>23 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>24 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>25 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>26 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>27 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>28 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>29 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>30 رمضان</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<script>
+const names = ['أفراح','فضيلة','خديجة','أمل','أمور','زينب','زهراء'];
+
+function calculateTop3() {
+    const tables = ['pointsTable','dishTable'];
+    tables.forEach(tableId => {
+        let sums = {};
+        names.forEach(name => sums[name] = 0);
+        document.querySelectorAll(`#${tableId} tbody tr`).forEach(row => {
+            row.querySelectorAll('td').forEach((td,i) => {
+                if(i>0) sums[names[i-1]] += parseInt(td.textContent)||0;
+            });
+        });
+        const top3 = Object.entries(sums).sort((a,b)=>b[1]-a[1]).slice(0,3);
+        const divId = tableId=='pointsTable'?'top3Points':'top3Dish';
+        const divTop3 = document.getElementById(divId);
+        divTop3.innerHTML='';
+        top3.forEach(([name,val])=>{
+            const d = document.createElement('div');
+            d.textContent=`${name} - ${val}`;
+            divTop3.appendChild(d);
+        });
+
+        if(tableId=='pointsTable'){
+            document.getElementById('sumAfrah').textContent=sums['أفراح'];
+            document.getElementById('sumFadila').textContent=sums['فضيلة'];
+            document.getElementById('sumKhadija').textContent=sums['خديجة'];
+            document.getElementById('sumAmal').textContent=sums['أمل'];
+            document.getElementById('sumAmour').textContent=sums['أمور'];
+            document.getElementById('sumZeinab').textContent=sums['زينب'];
+            document.getElementById('sumZahra').textContent=sums['زهراء'];
+        }
+    });
+}
+
+calculateTop3();
+</script>
+
+</body>
+</html>
